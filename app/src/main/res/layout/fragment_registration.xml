@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.fooddelivery.view.InputView
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textEmailAddress"
+        app:title="Email" />
+
+    <com.example.fooddelivery.view.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="numberPassword"
+        app:title="Password" />
+    <com.example.fooddelivery.view.InputView
+        android:id="@+id/repeat_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="numberPassword"
+        app:title="Password" />
+    <com.example.fooddelivery.view.InputView
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPersonName"
+        app:title="Nickname" />
+
+    <com.example.fooddelivery.view.ActionButtonView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="Регистрация"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

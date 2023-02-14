@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputView">
+        <attr name="title" format="string"></attr>
+        <attr name="android:inputType"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ActionButton">
+        <attr name="android:text" format="string"></attr>
+    </declare-styleable>
+</resources>

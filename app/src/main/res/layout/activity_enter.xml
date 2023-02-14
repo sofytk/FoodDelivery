@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    tools:context=".activity.EnterActivity">
+<FrameLayout
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:visibility="gone"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/pic"/>
+</FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id = "@+id/tabs"
+        android:translationZ="10dp"
+        android:background ="@drawable/enter_tablayout_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/orange"
+        app:tabTextColor="#F2000000"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextAppearance="@style/EnterTabLayoutTextAppearence"
+        app:tabIndicatorFullWidth="false" />
+
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+</LinearLayout>
